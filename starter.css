@@ -1,0 +1,342 @@
+/* Starter CSS */
+
+* {
+    box-sizing: border-box; /* because it’s 2019, jen simmons */
+    padding: 0;
+    margin: 0;
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background: #a8c8ff;
+    margin:0;
+    padding:0;
+    }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+    
+.hero{
+    background:url("../img/europe3.JPG") no-repeat  center;
+    background-size:cover;
+    padding:4rem 1rem;
+    margin:0;
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    grid-template-rows:1fr 1fr;
+    height:100vh;
+}
+
+.inner-hero{
+    background: rgba(247, 247, 247, 0.51);
+    padding:2rem;
+    border-radius:0.5rem;
+    grid-column:1;
+}
+
+h1{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size:2.5em;
+    text-align:center;
+}
+
+h2{
+    font-family: wedding-gothic-atf, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:1.5em;
+    text-align:center;
+    margin-top:1em;
+}
+
+p{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size:1em;
+    text-align:center;
+}
+
+.welcome{
+    margin-top:4em;
+    text-transform:uppercase;
+    color:black;
+    text-decoration:none;
+}
+
+.welcome a{
+    border:.5px solid black;
+    padding:.5em;
+}
+
+.welcome a:hover{
+    color:#086469;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    background:white;
+}
+
+.logo{
+    padding-top:1rem;
+    padding-bottom:1rem;
+    list-style:none;
+}
+
+.logo a{
+    color:black;
+    text-decoration:none;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:1.2em;
+}
+
+.main-nav{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    width:100%;
+}
+
+.main-nav a{
+    text-decoration:none;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size:1em;
+    display:block;
+    padding:1em;
+    color:black;
+    text-align:center;
+    padding:10px;
+    border-top: 1px solid whitesmoke;
+}
+
+.main-nav a:hover{
+    color:#a1849a;
+}
+
+.cards{
+    padding-top:2rem;
+    padding-bottom:2rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-width: 250px;
+    max-width:350px;
+    border-radius:.5rem;
+    margin:10px;
+    flex: 1 1 0;
+}
+
+.description{
+    flex: 1 1 0;
+    padding:2.5rem;
+}
+
+.photo{
+    max-height:400px;
+    overflow:hidden;
+}
+
+.title{
+    font-size:1.3em;
+    margin-bottom:1em;
+    color:black;
+    font-family: wedding-gothic-atf, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.card-footer{
+    text-decoration:none;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    color:black;
+    margin-bottom:1em;
+}
+
+.wrapper{
+    background-color:#a8c8ff;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:1em;
+    padding-top:2em;
+    justify-content:center;
+    align-content:center;
+}
+
+.wrapper img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    max-width:400px;
+    margin:0 auto;
+    border: .5px solid black;
+    border-radius:25px;
+}
+
+.text-one, .text-two, .text-three, .text-four, .text-five, .text-six{
+    padding:2.5rem;
+    margin:1em 1em 1em 1em;
+    color:black;
+    max-width:500px;
+    justify-content:center;
+    align-content:center;
+}
+
+@media (max-width:600px){
+    .hero{
+        grid-template-columns:auto 1fr 1fr;
+    }
+    .inner-hero{
+        grid-column:1;
+    }
+}
+
+@media only screen and (min-width:35em){
+    .logo{
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    
+    .main-nav{
+        flex-direction:row;
+        justify-content:space-around;
+    }
+
+    .main-nav a{
+        text-align:center;
+        padding:15px;
+        border-top:none;
+    }
+}
+
+@media only screen and (min-width: 60em){
+    .logo{
+        margin-left:30px;
+    }
+    
+    .flex-container{
+        flex-direction:row;
+    }
+
+    .main-nav{
+        justify-content:flex-end;
+    }
+
+    .main-nav a {
+        padding-left: 10px;
+        padding-right:10px;
+        margin-top:1.5em;
+        margin-left:10px;
+        margin-right:30px;
+    }
+}
+
+@media only screen and (min-width:900px){
+    .wrapper{
+        padding:2rem;
+        margin:0 auto;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto;
+    }
+    .image-one{
+        grid-column:1;
+        justify-self:center;
+        align-self:center;
+    }
+    .text-one{
+        grid-column:2;
+    }
+
+    .image-two{
+        grid-column:2;
+        grid-row:2;
+    }
+    .text-two{
+        grid-column:1;
+        grid-row:2;
+    }
+    .image-three{
+        grid-column:1;
+        grid-row:3;
+    }
+    .text-three{
+        grid-column:2;
+        grid-row:3;
+    }
+    .image-four{
+        grid-column:2;
+        grid-row:4;
+    }
+    .text-four{
+        grid-column:1;
+        grid-row:4;
+    }
+    .image-five{
+        grid-column:1;
+        grid-row:5;
+    }
+    .text-five{
+        grid-column:2;
+        grid-row:5;
+    }
+    .image-six{
+        grid-column:2;
+        grid-row:6;
+    }
+    .text-six{
+        grid-column:1;
+        grid-row:6;
+    }
+}
+
+
+    
+     
+    
+    /* This is the CSS markup for commenting */
+    
+    /* A one-line comment */
+    
+    /*
+    A comment
+    which stretches
+    over several
+    lines
+    */
+    
+    /* The comment below is used to
+       disable specific styling */
+    
+    /*
+    span {
+      color: blue;
+      font-size: 1.5em;
+    }
+    */
+    /* highlight the item and use Command + slash to comment something out. */
