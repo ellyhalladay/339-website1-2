@@ -25,7 +25,7 @@ img {
 }
     
 .hero{
-    background-image: url(/img/europe3.JPG);
+    background-image: url(./img/europe3.JPG);
     background-size:cover;
     padding:4rem 1rem;
     margin:0;
@@ -235,7 +235,7 @@ img.item{
 .headerbox{
     height:100vh;
     position:relative;
-    background-image:url(/img/camping.JPG);
+    background-image:url(./img/camping.JPG);
     background-size:cover;
     background-position:top center;
     background-repeat:no-repeat;
@@ -246,7 +246,7 @@ img.item{
 .headerbox-two{
     height:100vh;
     position:relative;
-    background-image:url(/img/bbqs.JPG);
+    background-image:url(./img/bbqs.JPG);
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
@@ -259,7 +259,7 @@ img.item{
 .headerbox-three{
     height:100vh;
     position:relative;
-    background-image:url(/img/sunsets.jpg);
+    background-image:url(./img/sunsets.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
